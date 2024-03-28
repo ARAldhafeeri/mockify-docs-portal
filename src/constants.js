@@ -1,0 +1,33 @@
+export const DOCS_LINKS = {
+    quick: "/docs/quick-start",
+    project: "/docs/projects",
+    resource: "/docs/resources",
+    data: "/docs/data",
+    policy: "/docs/policies",
+    endpoint: "/docs/endpoints",
+    edge: "/docs/edge-functions",
+    deployment: "/docs/deploying-mockify",
+    user: "/docs/users",
+    changelog: "/docs/changelog",
+    swagger: "/docs/swagger",
+    cache: "/docs/cache",
+    event: "/docs/events",
+    websocket: "/docs/websocket",
+}
+
+export const DOCS_LINKS_LIST = {
+    DATA : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Data.md?raw=true",
+    DEPLOYMENT : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Deployment.md?raw=true",
+    EDGE : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Edge.md?raw=true",
+    ENDPOINT : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Endpoint.md?raw=true",
+    POLICY : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Policy.md?raw=true",
+    PROJECT : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Project.md?raw=true",
+    QUICK : "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Quick.md?raw=true",
+    RESOURCE: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Resource.md?raw=true",
+    USERS: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Users.md?raw=true",
+    CHNAGELOG: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/changelog.md?raw=true",
+    SWAGGER: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Swagger.md?raw=true",
+    CACHE: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Cache.md?raw=true",
+    EVENT: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Event.md?raw=true",
+    WEBSOCKET: "https://raw.githubusercontent.com/ARAldhafeeri/mockify-docs/main/Websocket.md?raw=true",
+}
