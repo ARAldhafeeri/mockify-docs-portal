@@ -5,17 +5,28 @@ import DocLinks from './DocLinks';
 export default function NavBarDocs() {
     const [showMenu, setShowMenu] = React.useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
+
+    React.useEffect(() => {
+      const handleResize = () => {
+          // Close the menu if it's open when the window expands
+          if (showMenu && window.innerWidth >= 768) {
+              setShowMenu(false);
+          }
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, [showMenu]);
   return (
-    <div className="fixed justify-between items-center mx-auto pb-[150px]">
-    <div className="hidden md:block fixed left-0 w-[250px] top-0 h-full">
-      <a className="flex flex-row justify-end" href="/docs">
-        <img src={logo} alt="/" className="w-10 h-10 mt-2 ml-2" />
-        <h1 className="w-full m-2 text-[#7a7a7a] text-xl mt-4">Mockify.io Docs</h1>
-      </a>
+    <div className="justify-between items-center mx-auto pb-[150px] bg-[#0D1117]">
+    <div className="hidden md:block right-0 w-[200px] top-0 h-full fixed">
       <DocLinks />
     </div>
   
-    <div onClick={toggleMenu} className="fixed md:hidden text-[#7a7a7a] top-0 right-0">
+    <div onClick={toggleMenu} className="fixed md:hidden text-white top-0 right-0">
       {!showMenu && <AiOutlineMenu className="text-3xl" />}
     </div>
   
@@ -23,7 +34,7 @@ export default function NavBarDocs() {
       <div
         className={
           showMenu
-            ? 'z-4 bg-[#F5F5F5] fixed left-0 top-0 w-full md:w-[60%] h-full border-r border-r-gray-900 transition ease-in-out duration-500'
+            ? 'z-4  bg-[#0D1117] fixed left-0 top-0  w-[50%] overflow-auto h-full border-r border-r-gray-900 transition ease-in-out duration-500'
             : 'fixed left-[-100%]'
         }
       >

@@ -1,18 +1,19 @@
 import React from 'react'
 import NavBarDocs from '../common/NavbarDocs'
+import TopBar from '../common/TopBar'
 
 export default function DocsLayout({children}) {
   return (
 <>
-<div className='grid grid-cols-2 m-5'>
-    <div className='grid gap-y-2 gap-x-1 grid-flow-row-dense grid-col-1 md:grid-col-2 pb-[500px] md:pb-[400px]'>
-        <div className="md:ml-[220px]  flex flex-col md:w-[700px] w-[600px] ">
-          {children}
-        </div>
-        <NavBarDocs />
-    </div>
+<TopBar />
+
+<div className='md:grid md:grid-cols-[auto_200px] m-5 bg-[#0D1117]'>
+  <div className="flex flex-col pb-11 pt-11">
+    {children}
+  </div>
+  <NavBarDocs />
 </div>
-<footer className="bg-[#F5F5F5] fixed  w-full text-center text-xl text-black font-bold bottom-0">2023 © mockify.io</footer>
+<footer className="w-full fixed bg-[#00df9a] text-center text-xl text-black font-bold bottom-0">2024 © mockify.io</footer>
 
 </>
   )

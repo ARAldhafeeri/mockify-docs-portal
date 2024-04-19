@@ -1,9 +1,8 @@
 .hero-container {
   background: linear-gradient(to right, #00df9a, #FF2065);
-  border-radius: 20px; /* Adjust the border-radius to control the curvature */
-  padding: 20px; /* Add padding as needed */
+  border-radius: 20px;
+  padding: 20px;
 }
-
 
 main {
   display: flex;
@@ -16,12 +15,12 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 25px 0;
-  
+
   .slider {
     position: relative;
     height: 500px;
     width: 350px;
-    overflow: hidden;   
+    overflow: hidden;
 
     @media only screen and (max-width: 375px) {
       height: 400px;
@@ -36,11 +35,11 @@ main {
       background-repeat: no-repeat;
       background-position: center;
       will-change: transform, opacity;
-  
+
       &:hover {
         cursor: grab;
       }
-  
+
       &:active {
         cursor: grabbing;
       }
@@ -59,7 +58,7 @@ main {
       font-family: inherit;
       font-size: inherit;
       color: white;
-      transition: .07s ease-out transform;
+      transition: 0.07s ease-out transform;
 
       &:first-of-type {
         margin-right: 15px;
@@ -70,19 +69,19 @@ main {
       }
 
       &:active {
-        transform: scale(.85) skewY(-5deg) rotate(5deg);
+        transform: scale(0.85) skewY(-5deg) rotate(5deg);
       }
     }
-  }   
+  }
 }
 
 .thumbnails {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  
+
   .thumbnail-container {
-    position: relative;  
+    position: relative;
 
     @media only screen and (max-width: 375px) {
       height: 70px;
@@ -91,7 +90,7 @@ main {
 
     &:hover {
       cursor: pointer;
-      scale: 1.1;
+      transform: scale(1.1); /* Fixed typo: changed 'scale' to 'transform' */
     }
 
     &:not(:last-of-type) {
@@ -120,60 +119,45 @@ main {
 }
 
 pre {
-  background-color: #f4f4f4;
-  padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  overflow-x: auto;
-  font-family: 'Courier New', monospace;
-  margin-top: 10px;
-  margin-bottom:10px;
+  border: 1px solid #00df9a;
+  padding: 5px;
 }
 
-h1 {
-  font-size: 1.5rem;
+code {
+  color: #00df9a;
+  padding: 5px;
+}
+
+h1, h2, h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  margin-top: 10px;
-}
-
-h2 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  margin-top: 10px;
-}
-
-h3 {
+  color: #00df9a;
   font-size: 1rem;
-  margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+p, li, ol {
   margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  max-width: 700px;
 }
 
 p {
   font-size: 1rem;
-  margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  width: 100;
-  margin-top: 10px;
   line-height: 1.5;
-}
-
-
-
-
-a {
-  color: #FF2065;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 hr {
   border: 1px solid #ddd;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-top: 10px;
+}
+
+li {
+  font-size: 0.75rem;
+}
+
+ol {
+  font-size: 1rem;
 }

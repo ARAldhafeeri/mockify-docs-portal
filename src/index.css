@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
-  background-color: white;
+  background-color: #0D1117;
 }
+
 
 
 html * {
@@ -79,4 +81,8 @@ svg {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
+}
+
+span {
+  font-size: x-small;
 }
