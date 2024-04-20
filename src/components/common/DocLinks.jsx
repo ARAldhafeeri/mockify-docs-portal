@@ -4,7 +4,7 @@ import { AiFillControl, AiFillPlayCircle, AiFillPlaySquare, AiFillStar, AiOutlin
 import { DOCS_LINKS } from '../../constants'
 export default function DocLinks() {
   return (
-    <div className='pt-11 uppercase bg-[#0D1117]'>
+    <div className='pt-[100px] uppercase bg-[#0D1117]'>
         <DocLink link={DOCS_LINKS.quick} text="Quick start guide" icon={<AiFillPlaySquare size={15} color="#00df9a" />} />
         <DocLink link={DOCS_LINKS.user} text="Users"  icon={<AiOutlineUser size={15} color="#00df9a" />} />
         <DocLink link={DOCS_LINKS.project} text="Projects"  icon={<AiOutlineFundProjectionScreen size={15} color="#00df9a" />} />

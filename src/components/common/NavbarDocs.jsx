@@ -21,7 +21,7 @@ export default function NavBarDocs() {
       };
   }, [showMenu]);
   return (
-    <div className="justify-between items-center mx-auto pb-[150px] bg-[#0D1117]">
+    <div className="justify-between items-center mx-auto bg-[#0D1117] z-1">
     <div className="hidden md:block right-0 w-[200px] top-0 h-full fixed">
       <DocLinks />
     </div>
