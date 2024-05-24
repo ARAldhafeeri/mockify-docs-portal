@@ -33,7 +33,7 @@ const withDocsLayout = (e) => (
 
 const MainRouter = createBrowserRouter([
 {
-    path: "/",
+    path: "/mockify-docs-portal",
     element: withDocsLayout(<DocsPage />),
 }, 
 {
