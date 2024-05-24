@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mockify-docs-portal/static/css/main.634c0726.css",
-    "main.js": "/mockify-docs-portal/static/js/main.1dc431b6.js",
+    "main.js": "/mockify-docs-portal/static/js/main.aadd27e4.js",
     "static/media/logo.png": "/mockify-docs-portal/static/media/logo.45e5afec383e744bd789.png",
     "static/media/without.png": "/mockify-docs-portal/static/media/without.c5fb6dcde595f2359999.png",
     "static/media/with.png": "/mockify-docs-portal/static/media/with.b02fa6f3ef76fc536fb5.png",
     "index.html": "/mockify-docs-portal/index.html",
     "main.634c0726.css.map": "/mockify-docs-portal/static/css/main.634c0726.css.map",
-    "main.1dc431b6.js.map": "/mockify-docs-portal/static/js/main.1dc431b6.js.map"
+    "main.aadd27e4.js.map": "/mockify-docs-portal/static/js/main.aadd27e4.js.map"
   },
   "entrypoints": [
     "static/css/main.634c0726.css",
-    "static/js/main.1dc431b6.js"
+    "static/js/main.aadd27e4.js"
   ]
 }
