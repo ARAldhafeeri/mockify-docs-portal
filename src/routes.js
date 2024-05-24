@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  createBrowserRouter,
+  createMemoryRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -31,7 +31,7 @@ const withDocsLayout = (e) => (
   </DocsLayout>
 );
 
-const MainRouter = createBrowserRouter([
+const MainRouter = createMemoryRouter([
 {
     path: "/mockify-docs-portal",
     element: withDocsLayout(<DocsPage />),
@@ -93,6 +93,9 @@ const MainRouter = createBrowserRouter([
     element: withDocsLayout(<ChangeLog />)
 }, 
 
-]);
+], {
+    initialEntries: ["/mockify-docs-portal"],
+    initialIndex: 1,
+  });
 
 export default MainRouter;
